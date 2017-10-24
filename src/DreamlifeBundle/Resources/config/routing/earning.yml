@@ -1,0 +1,5 @@
+earn_calc:
+    path:     /f/{neud_id}
+    defaults: { _controller: "DreamlifeBundle:Earning:index:" }
+    methods:  GET
+

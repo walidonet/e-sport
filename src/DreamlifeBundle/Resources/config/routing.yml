@@ -1,0 +1,9 @@
+dreamlife_homepage:
+    path:     /
+    defaults: { _controller: DreamlifeBundle:Default:index }
+my_app_tree:
+    resource: "@DreamlifeBundle/Resources/config/routing/tree.yml"
+    prefix:   /tree
+my_app_earn:
+    resource: "@DreamlifeBundle/Resources/config/routing/earning.yml"
+    prefix:   /earn
