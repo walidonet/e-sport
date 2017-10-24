@@ -1,0 +1,16 @@
+neud_index:
+    path:     /f
+    defaults: { _controller: "MyAppBundle:Neud:index" }
+    methods:  GET
+neud_service:
+    path:     /a
+    defaults: { _controller: "MyAppBundle:Neud:getNeuds" }
+    methods:  GET
+neud_onebyid:
+    path:     /d/{neud_id}
+    defaults: { _controller: "MyAppBundle:Neud:getNeudById" }
+    methods:  GET
+neud_treepartner:
+    path:     /c/{neud_id}
+    defaults: { _controller: "MyAppBundle:Neud:Treebyid" }
+    methods:  GET

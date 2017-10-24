@@ -1,13 +1,13 @@
 <?php
 
-namespace DreamlifeBundle\Controller;
+namespace MyAppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
     public function indexAction()
-    {//lllllll
-        return $this->render('DreamlifeBundle:Default:index.html.twig');
+    {
+        return $this->render('MyAppBundle:Default:index.html.twig');
     }
 }

@@ -1,6 +1,10 @@
+dreamlife:
+    resource: "@DreamlifeBundle/Resources/config/routing.yml"
+    prefix:   /dreamlife
+
 my_app:
     resource: "@MyAppBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /app
 
 user:
     resource: "@UserBundle/Resources/config/routing.yml"

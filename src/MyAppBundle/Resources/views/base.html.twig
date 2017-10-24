@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Organization Chart Plugin</title>
+    <link rel="stylesheet" href="{{ asset('template/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/css/jquery.orgchart.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/css/style.css') }}">
+</head>
+<body>
+<div id="chart-container"></div>
+
+<script type="text/javascript" src="{{ asset('template/js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('template/js/jquery.orgchart.min.js') }}"></script>
+
+<script>
+console.log('salem');
+   (function() {
+
+       var flickerAPI = "http://127.0.0.1:8000/app/neuds/a";
+       $.getJSON( flickerAPI, {
+           tags: "mount rainier",
+           tagmode: "any",
+           format: "json"
+       })
+           .done(function( data ) {
+
+               $.each( data, function( i, item ) {
+
+
+
+
+
+/******/
+       });
+               $('#chart-container').orgchart({
+                   'data' : data,
+                   'nodeContent': 'title'
+               });
+       });
+
+   })();
+</script>
+
+</body>
+</html>

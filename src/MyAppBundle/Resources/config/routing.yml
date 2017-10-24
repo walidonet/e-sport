@@ -1,0 +1,10 @@
+my_app_voiture:
+    resource: "@MyAppBundle/Resources/config/routing/voiture.yml"
+    prefix:   /voiture
+my_app_neud:
+    resource: "@MyAppBundle/Resources/config/routing/neud.yml"
+    prefix:   /neuds
+
+my_app_homepage:
+    path:     /
+    defaults: { _controller: MyAppBundle:Default:index }

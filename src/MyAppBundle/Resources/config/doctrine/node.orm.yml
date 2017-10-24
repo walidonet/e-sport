@@ -1,0 +1,11 @@
+MyAppBundle\Entity\node:
+    type: entity
+    table: null
+    repositoryClass: MyAppBundle\Repository\nodeRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

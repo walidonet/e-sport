@@ -1,0 +1,18 @@
+MyAppBundle\Entity\Neud:
+    type: entity
+    table: null
+    repositoryClass: MyAppBundle\Repository\NeudRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        parentId:
+            type: integer
+            column: parent_id
+        description:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
